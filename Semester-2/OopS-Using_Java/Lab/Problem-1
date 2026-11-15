@@ -1,0 +1,23 @@
+
+Problem Statement
+
+Write a Java Program to find the transpose of a given Matrix.
+
+Define the input as given in the instructions.
+
+
+Instructions
+
+matrix size = 3*3
+
+input : 1 1 1 
+
+            2 2 2
+
+           3  3  3
+
+Output: 1 2 3
+
+              1 2 3
+
+               1 2 3 
