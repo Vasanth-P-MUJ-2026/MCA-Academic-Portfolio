@@ -1,0 +1,34 @@
+// Problem Statement
+// Write a C++ program to store the numbers 12, 45, 23, 67, and 34 in an array and find the largest element.
+
+#include <iostream>
+using namespace std;
+
+// NOTE: UNCOMMENT THE BELOW LINE TO ENABLE WHITEBOX TEST CASE
+//#ifndef __CXX_TEST_MAIN__/
+
+int main(){
+    // Initialize the array with the given numbers
+    int numbers[] = {12, 45, 23, 67, 34};
+
+    // Calculate the total number of element in the array
+    int arraySize = sizeof(numbers) / sizeof(numbers[0]);
+
+    // Assume the first element is the largest initially
+    int largestNumber = numbers[0];
+
+    //Iterate through the remaining elements to find the maximum value
+    for (int i = 1; i < arraySize; ++i) {
+        if (numbers[i] > largestNumber) {
+            largestNumber = numbers[i];
+        }
+    }
+
+    //Display the result
+    std::cout << largestNumber << std::endl;
+
+    return 0;
+}
+
+//NOTE: UNCOMMENT THE BELOW LINE TO ENABLE WHITEBOX TEST CASE
+//#endif
